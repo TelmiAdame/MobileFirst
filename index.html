@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Mobile First</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <!--Mensagem Inicial-->
+    <form action="#" method="POST"> <!--Pode ser GET ou POST , qual diferença além de ocultar info-->
+        <div class="container">
+            <div class="div1">
+                <h1>Olá,</h1>
+                <div class="linha"></div>
+            </div>
+            <div class="div2">
+                <p>Estamos contruindo a nova geração de seviços financeiros no Braisl e você será um dos primeiros a experiementar.</p>
+                <p>Tenha em mãos <br><strong>um documento com foto</strong>.</p>
+                <p>Esse processo por levar<br><strong>até 3 minutos</strong> para ser concluído.</p>
+                <p> Todos os campos são de <br><strong>preenchimento obrigatório</strong>.</p>
+                <div class="linha"></div>
+            </div>
+            <div class="div2">
+                <h2>Vamos começar?</h2>
+                <button onclick = "continuar()" class="button-completo">Continuar</button>
+            </div>
+        </div>
+        <!--Meus dados-->
+        <div class = "container">
+            <div class="content">
+                <div class="content-top">
+                    <h1>Meus dados</h1>
+                    <button class="button-simples">Continuar</button>
+                    <div class="steps"></div>
+                    <div class="step-active"></div>
+                </div>
+                <div class="content-item">    
+                            <label></label>
+                            <a class="item"><img src="midia/facebook-box-fill.png">Preencher  usando o Facebook</a>
+                            <label></label>
+                            <a class="item"><img src="midia/google-chrome-7-761672.png">Preencher usando o Google</a>
+                            <label>Nome completo</label>
+                            <input type ="text" autofocus required>
+                            <label>E-mail</label>
+                            <input type="email"  required>
+                            <label>Data de nascimento (DD/MM/AAAA)</label>
+                            <input type="date"  required>
+                            <label>CPF</label>
+                            <input id="line-off" type="number"required  mask>
+                </div>
+            </div>
+            <div class="div2">
+                <button class="button-completo">Continuar</button>
+            </div>
+        </div>
+         <!--Meu telefone-->
+        <div class = "container">
+                <div  class="content-top">
+                    <h1>Meu telefone</h1>
+                    <div class="steps"></div>
+                    <div class="step-active"></div>
+                </div>
+                <div class="content-top">
+                    Só entraremos em contato com voê caso seja extremamente necessário.
+                </div>
+                <div class="content-item">
+                    <label>Número do celular</label>
+                    <input class="item" id="line-off" type="tel"required>
+                </div>
+                <div class="div2">
+                    <button class="button-completo">Continuar</button>
+                </div>
+         </div>
+         <!--Meu endereço-->
+        <div class = "container">
+            <div class="content-top">
+                <h1>Meu endereço</h1>
+                <button class="button-simples">Continuar</button>
+                <div class="steps"></div>
+                <div class="step-active"></div>
+            </div>                 
+            <div class="content-item">
+                <label>CEP</label>
+                <input type="number" required>
+                <label>Rua, Avenida etc.</label>
+                <input type="text" required>
+                    <div content-item-exeption>
+                        <div class="content-item-left">
+                            <label>Número</label>
+                            <input type="number"  placeholder="1" required>
+                        </div>
+                        <div class="content-item-right">
+                            <label>Complemento</label>
+                            <input type="text" required>
+                        </div>
+                    </div>
+                <label>Bairro</label>
+                <input type="text" required>
+                <label>Cidade</label>
+                <input type="text" required>
+                <label>Estado</label>
+                <input type="text" id="line-off"  required>
+            </div>
+            <div class="div2">
+                <button class="button-completo">Continuar</button>
+            </div>
+        </div>
+        <!--Minhas fotos-->
+        <!--Alert de permissão-->
+        <div class="container">
+            <div class="content-top">
+                <h1>Minhas fotos</h1>
+                <button class="button-simples">Continuar</button>
+            </div>
+            <div>Precisamos dessas fotos para verificar a sua identidade. Por favor, esteja em um ambiente iluminado e garante que o documento esteja legível.
+            </div>
+            <div class="content-item">
+                <label>Self</label>
+                <input type="file" required>
+                <p> Não se preocupe. Não mostaremos suas fotos <strong>para ninguém.</strong>
+                </p>
+            </div>
+            <div class="content-item">
+                <label>Frente</label>
+                <input type="file" required>
+            </div>
+            <div class="content-item">
+                <label>Verso</label>
+                <input type="file" required>
+            </div>
+            <button class="button-completo">Continuar</button>
+        </div>
+        <!--Termos e condições-->
+        <div class="container">
+            <div class="content-top">
+                <h1>Termos e condições</h1>
+                <button class="button-simples">Continuar</button>
+            </div>
+            <div class="content-item">
+                <input type="checkbox" required>
+                <p>Ao assinar, você concorda com nossos <a href="#">termos e condições</a></p>
+            </div>
+            <button class="button-completo">Continuar</button>
+        </div>
+        <!--Criar senha-->
+        <div class="container">
+            <div class="content-top">
+                <h1>Criar senha</h1>
+                <button class="button-simples">Continuar</button>
+            </div>
+            <p>Escolha a senha de 4 dígitos do seu cartão</p>
+            <div class="content-item">
+                <input type="numeber" required autofocus>
+                <input type="numeber" required autofocus>
+                <input type="numeber" required autofocus>
+                <input type="numeber" required autofocus>
+            </div>
+            <button class="button-completo">Continuar</button>
+        </div>
+        <!--Mensagem Final-->
+        <div class="container" >
+            <div class="content-top">
+                <h1>Tudo Pronto,</h1>
+                <p>Agora é só esperar nossa equipe concluir a análise dos documentos. O prazo máximo é de 24 horas.</p>
+            </div>
+            <div>
+                <p>Animado para fazer parte de novo meio digital? <br> Agora você pode indicar amigos para também fazer desse mundo.</p>
+            </div>
+            <div class="content-item">
+                <a href="#">Email</a>
+                <a href="#">Whatsapp</a>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+
+<!--Como funciona o sistema de enviar sms par ao cliente?
+    Como funciona a busca de contatos?
+    Qual atalho para criar varias div com input dentro? 
+    (div>a)*5
+    Uso o button tag  ou o submit  atributo? BUTTON
+    Como mostrar uma prévia das imagens que foram enviadas? JS-> salvar em uma variavel
+    Existe algum "type" para nº de documento?
+    Não, mas poder usar: 999.999.999-19, REGEX ,Validador de cpf cnpj, Mascara de cpf/cnpj.
+
+    JAVA SCRIP:
+    **Deixar o botão opaco e inativo até todos os campos serem preenchidos
+    **Configurar input do CPF 
+    **Mostrar uma prévia das imagens que foram enviadas? JS-> salvar em uma variavel
+-->
