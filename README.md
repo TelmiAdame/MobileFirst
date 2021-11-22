@@ -1,6 +1,6 @@
 # MobileFirst
 
-Olá, essa é uma pasta que contém um pouco do meu processo inicial de estudos em Mobile Firsdt e HTML/CSS.
+Olá, essa é uma pasta que contém um pouco do meu processo inicial de estudos em Mobile First e HTML/CSS.
 O app simula um cadastro que usuário faria ao baixar um app de uma instituição financeira pela primeira vez.
 O único objetivo do desenvolvimento dessa interface é desenvolver meus estudos.
 
