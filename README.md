@@ -1,7 +1,7 @@
 # MobileFirst
 
 Olá, essa é uma pasta que contém um pouco do meu processo inicial de estudos em Mobile First e HTML/CSS.
-O app simula um cadastro que usuário faria ao baixar um app de uma instituição financeira pela primeira vez.
+O app simula o cadastro que o usuário faria ao baixar o app da instituição financeira pela primeira vez.
 O único objetivo do desenvolvimento dessa interface é desenvolver meus estudos.
 
 Foram desenvolvidas interfaces onde o usuário pode:
