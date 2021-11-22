@@ -1,11 +1,7 @@
 WHATSSAP 
 <div>Ícones feitos por <a href="https://www.flaticon.com/br/autores/riajulislam" title="riajulislam">riajulislam</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>
 
-Google
-<div>Ícones feitos por <a href="https://www.flaticon.com/br/autores/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>
-
 FACEBOOK
 <div>Ícones feitos por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>
 
-GMAIL
-<div>Ícones feitos por <a href="https://www.flaticon.com/br/autores/google" title="Google">Google</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>
+
