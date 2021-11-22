@@ -45,7 +45,7 @@
                             <input type ="text" autofocus required>
                             <label>E-mail</label>
                             <input type="email"  required>
-                            <label>Data de nascimento (DD/MM/AAAA)</label>
+                            <label>Data de nascimento</label>
                             <input type="date"  required>
                             <label>CPF</label>
                             <input id="line-off" type="number"required  mask>
@@ -59,6 +59,7 @@
         <div class = "container">
                 <div  class="content-top">
                     <h1>Meu telefone</h1>
+                    <button class="button-simples">Continuar</button>
                     <div class="steps"></div>
                     <div class="step-active"></div>
                 </div>
@@ -89,7 +90,7 @@
                     <div content-item-exeption>
                         <div class="content-item-left">
                             <label>Número</label>
-                            <input type="number"  placeholder="1" required>
+                            <input type="number"  placeholder="" required>
                         </div>
                         <div class="content-item-right">
                             <label>Complemento</label>
@@ -108,41 +109,52 @@
             </div>
         </div>
         <!--Minhas fotos-->
-        <!--Alert de permissão-->
         <div class="container">
             <div class="content-top">
                 <h1>Minhas fotos</h1>
                 <button class="button-simples">Continuar</button>
             </div>
-            <div>Precisamos dessas fotos para verificar a sua identidade. Por favor, esteja em um ambiente iluminado e garante que o documento esteja legível.
+            <div class="content-top" id = "minhasFotos">Precisamos dessas fotos para verificar a sua identidade. Por favor, esteja em um ambiente iluminado e garante que o documento esteja legível.
             </div>
             <div class="content-item">
-                <label>Self</label>
+                <label class = "label-file">Self</label>
                 <input type="file" required>
-                <p> Não se preocupe. Não mostaremos suas fotos <strong>para ninguém.</strong>
+            </div>
+            <div id ="condicoes">
+                <p > 
+                    Não se preocupe. Não mostaremos suas fotos <strong>para ninguém.</strong>
                 </p>
             </div>
             <div class="content-item">
-                <label>Frente</label>
+                <label  class = "label-file">Frente</label>
                 <input type="file" required>
             </div>
             <div class="content-item">
-                <label>Verso</label>
+                <label  class = "label-file">Verso</label>
                 <input type="file" required>
             </div>
-            <button class="button-completo">Continuar</button>
+            <div class="div2">
+                <button class="button-completo">Continuar</button>
+            </div>
         </div>
         <!--Termos e condições-->
         <div class="container">
             <div class="content-top">
-                <h1>Termos e condições</h1>
+                <h1>Condições</h1>
                 <button class="button-simples">Continuar</button>
             </div>
-            <div class="content-item">
-                <input type="checkbox" required>
-                <p>Ao assinar, você concorda com nossos <a href="#">termos e condições</a></p>
+            <div id ="condicoes">
+                    <p>Leia nossos termos e condições e depois click no checkbox para assinar. Ao assinar, você concorda com nossos termos e condições.
+                    </p>
+                    <label id = "label-condicoes"> 
+                        <input type="checkbox" required>
+                        <a href="#">termos e condições</a> 
+                    </label>
+                </div>
+                <div class="div2">
+                    <button class="button-completo">Continuar</button>
+                </div>
             </div>
-            <button class="button-completo">Continuar</button>
         </div>
         <!--Criar senha-->
         <div class="container">
@@ -150,14 +162,16 @@
                 <h1>Criar senha</h1>
                 <button class="button-simples">Continuar</button>
             </div>
-            <p>Escolha a senha de 4 dígitos do seu cartão</p>
-            <div class="content-item">
+            <p>Escolha uma senha de 4 dígitos para utilizar em seu futuro cartão.</p>
+            <div class="content-item" id = "senha">
                 <input type="numeber" required autofocus>
                 <input type="numeber" required autofocus>
                 <input type="numeber" required autofocus>
                 <input type="numeber" required autofocus>
             </div>
-            <button class="button-completo">Continuar</button>
+            <div class="div2">
+                <button class="button-completo">Continuar</button>
+            </div>
         </div>
         <!--Mensagem Final-->
         <div class="container" >
@@ -165,30 +179,17 @@
                 <h1>Tudo Pronto,</h1>
                 <p>Agora é só esperar nossa equipe concluir a análise dos documentos. O prazo máximo é de 24 horas.</p>
             </div>
-            <div>
+            <div class="content-top">
                 <p>Animado para fazer parte de novo meio digital? <br> Agora você pode indicar amigos para também fazer desse mundo.</p>
             </div>
-            <div class="content-item">
-                <a href="#">Email</a>
-                <a href="#">Whatsapp</a>
-                <a href="#">Facebook</a>
+            <div class="content-item" id = "redes-sociais">
+                <a href="#"><img src="midia/logotipo-do-gmail.png">Email</a>
+                <a href="#"><img src="midia/whatsapp.png">Whatsapp</a>
+                <a href="#"><img src="midia/facebook-box-fill.png">Facebook</a>
             </div>
         </div>
     </form>
 </body>
 </html>
 
-<!--Como funciona o sistema de enviar sms par ao cliente?
-    Como funciona a busca de contatos?
-    Qual atalho para criar varias div com input dentro? 
-    (div>a)*5
-    Uso o button tag  ou o submit  atributo? BUTTON
-    Como mostrar uma prévia das imagens que foram enviadas? JS-> salvar em uma variavel
-    Existe algum "type" para nº de documento?
-    Não, mas poder usar: 999.999.999-19, REGEX ,Validador de cpf cnpj, Mascara de cpf/cnpj.
 
-    JAVA SCRIP:
-    **Deixar o botão opaco e inativo até todos os campos serem preenchidos
-    **Configurar input do CPF 
-    **Mostrar uma prévia das imagens que foram enviadas? JS-> salvar em uma variavel
--->
